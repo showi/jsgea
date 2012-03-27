@@ -14,7 +14,7 @@ var GeImageBuffer = Class.create(GeObject, {
 		this.initBuffer();
 		this.htmlCanvas = null;
 		this.ctx = null;
-		this.bgcolor = 'rgba(244,0,0,0)';
+		this.bgcolor = 'rgba(0,0,0,255)';
 		this.initBuffer();
 	},
 	

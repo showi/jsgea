@@ -87,17 +87,14 @@ var GeCore = Class.create(GeObject, {
 			that.loop();
 		}, GE_CORE_TIMER_UPDATE);
 		this.RenderingLoop = new PeriodicalExecuter(function(pe) {	
+			//that.SG.hook_rendering_pre();
 			that.Renderers.each(function(pair) {
 				pair.value.draw();
 			});
 			that.DiscreteTime.alpha = 0;
-			that.SG.post_rendering();
+			//that.SG.hook_rendering_post();
 	
 		}, GE_CORE_TIMER_RENDERING);
-	},
-	
-	hookPreUpdate: function(that) {
-		ShoGE.w("Pre update");
 	},
 	
 	loop: function() 

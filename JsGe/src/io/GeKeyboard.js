@@ -7,6 +7,11 @@ GeKeys.ESC     = 27;
 GeKeys.ENTER  = 13,
 GeKeys.SPACE = 32;
 
+GeKeys.L_a = 65;
+GeKeys.L_z = 90;
+GeKeys.L_u = 85;
+
+
 var GeKeyboard_Key = Class.create(GeObject, {
 	initialize: function($super, parent, keycode) {
 		$super(parent);
@@ -64,6 +69,7 @@ var GeKeyboard = Class.create(GeObject, {
 		var that = this;
 		/* Watch keydown event */
 		document.observe("keydown", function(e) {
+			ShoGE.w("Key: " + e.keyCode);
 			var key = that.keys.get(e.keyCode);
 			if (!key) return;
 			e.stop();

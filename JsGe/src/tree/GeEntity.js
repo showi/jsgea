@@ -68,57 +68,40 @@ var GeEntity = Class.create(GeNode, {
 		this.v.set(x,y,z);
 	},
 	
-	hookPreUpdate: function(that) {
-		ShoGE.w("PreUpdate");
-	},
-	
 	update: function(dt) 
 	{
-		//return;
 		this.traverseDown(function(that) {
-			if (that.Animation)  {
-				that.Animation.update(dt);
-			}
-			if (that.Physic) {
-				//that.Physic.update(dt);
-			}
-			if (that.AI) {
-
-			}
-			//that.hookPostUpdate(that);
+			that.hook_update_pre(dt);
+			if (that.Animation)  { that.Animation.update(dt); }
+			if (that.Physic) { that.Physic.update(dt); }
+			if (that.AI) { that.AI.update; }
+			that.hook_update_post(dt);
 		});
 	},
+	
+	hook_update_pre: function(dt) {;},
+	hook_update_post: function(dt) {;},
+	hook_rendering_pre: function() {;},
+	hook_rendering_post: function() {;},
 	
 	draw: function(renderer) 
 	{
 		renderer.save();
 		this.traverseDown(function(that) {
-			if (that.AI) {
-				that.AI.update(1);
-			}
-			if (that.IsoPosition) {
-			//ShoGE.w('trans');
-				renderer.translate(that.IsoPosition.getX(), that.IsoPosition.getY());
-			}
-			if (that.canvas) {
-				that.canvas.draw(renderer);
-			}
-			
+			that.hook_drawing_pre();
+			if (that.AI) { that.AI.update(1);}
+			if (that.IsoPosition) { renderer.translate(that.IsoPosition.getX(), that.IsoPosition.getY()); }
+			if (that.canvas) { that.canvas.draw(renderer); }
+			that.hook_drawing_post();
 		});
 		renderer.restore();
 	},
-	
+	hook_drawing_pre: function(dt) {;},
+	hook_drawing_post: function(dt) {;},
 
-	preload_ressources: function() 
-	{
-		; // Stub
-	},
-	
-	post_rendering: function() { ; },
-	
-	prettyPrint: function($super) {
-		var msg = $super();
-		msg+= "Position: " + this.Position.prettyPrint();
-		return msg;
-	}
+//	prettyPrint: function($super) {
+//		var msg = $super();
+//		msg+= "Position: " + this.Position.prettyPrint();
+//		return msg;
+//	}
 });

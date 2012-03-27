@@ -267,18 +267,10 @@ var GeSubMap_Draw = Class.create(GeObject, {
 	
 	draw: function(renderer) 
 	{	
-		/*var tagp1 = Math.random()*13453;
-		var tagp2 = Math.random()*1563;
-		var tag = Date.now() + "-" + Math.round(tagp1);
-		renderer.Camera.tracked.parent.canvas.drawFromMe(renderer,tag , 3);
-
-		
-		return;
-*/	
 			var numH = (renderer.Screen.width / this.parent.tileWidth);
 			var numV = (renderer.Screen.height / this.parent.tileWidth/2);
-			numH = 7;
-			numV = 8;
+			numH = 10;
+			numV = 10;
 			var position, col, row;
 				 tile = renderer.Camera.tracked.parent;
 			if (!tile) {
@@ -289,9 +281,6 @@ var GeSubMap_Draw = Class.create(GeObject, {
 			x = tile.col;
 			y = tile.row;
 			var p = new GeVector3D(x, y);
-			//var p = this.parent.Walker.getMapPosition(PP);
-			//p = new GeVector3D(x, y, 0);
-			//ShoGE.w("Position: " + p.prettyPrint());
 			var minX, maxX, minY, maxY;
 			minX = p.getX() - numH;
 			if (minX < 0) {

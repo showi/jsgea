@@ -40,10 +40,7 @@ var GeTile = Class.create(GeEntity, {
 		$super(parent);
 		this.setClassName('GeTile');
 		this.setType("tile");
-		var w = width / 2;
-		this.setU(w, 0, 0);
-		this.setV(0, w, 0);
-		this.setG(0);
+		this.set_width(width)
 		this.row = row;
 		this.col = col;
 		this.id = id;
@@ -58,6 +55,13 @@ var GeTile = Class.create(GeEntity, {
 		this.enable('canvas', new GeDrawTile(this));
 		this.layers = new Array();
 		this.friends = new Array();
+	},
+	
+	set_width: function(width) {
+		var w = width / 2;
+		this.setU(w, 0, 0);
+		this.setV(0, w, 0);
+		this.setG(0);
 	},
 	
 	setFriends: function() {
