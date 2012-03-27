@@ -18,9 +18,9 @@ var GeDiscreteTime = Class.create(GeObject, {
 		while(this.accumulator > this.dt) {	
 			this.accumulator -= this.dt;
 			this.t += this.dt;
-			if (this.parent) this.parent.hookPreUpdate(this);
+//			if (this.parent) this.parent.hookPreUpdate(this);
 			ShoGE.Core.SG.update(this.dt);
-			if (this.parent) this.parent.hookPostUpdate(this)
+//			if (this.parent) this.parent.hookPostUpdate(this)
 		}
 		this.alpha += (this.accumulator / this.dt);
 	}

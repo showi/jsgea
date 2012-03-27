@@ -40,7 +40,6 @@ var GeMediaPool = Class.create(GeObject, {
 		if (!img) { throw("GeImagePool: Trying to get invalid image: " + src); }
 		if (!img.isLoaded()) {
 			throw("Unloaded image");
-			
 		}
 		return img;
 	},

@@ -1,46 +1,4 @@
-var GeImageBuffer = Class.create(GeObject, {
-	
-	initialize: function($super, parent, w, h) 
-	{
-		$super(parent);
-		this.setClassName('GeImageBuffer');
-		this.width = w;
-		this.height = h;
-		this.initBuffer();
-	},
-	
-	initBuffer: function() 
-	{
-		this.htmlCanvas = document.createElement('canvas');
-		this.htmlCanvas.width = this.width;
-		this.htmlCanvas.height = this.height;
-		this.ctx = this.getContext();
-		return this.htmlCanvas;
-	},
-	
-	getContext: function() 
-	{
-		return this.htmlCanvas.getContext('2d');
-	},
-	
-	clear: function(color) 
-	{
-		this.initBuffer();
-		this.ctx.fillStyle = color;
-		this.ctx.fillRect(0, 0, this.width, this.height);
-	},
-	
-	draw: function(ctx) 
-	{
-		ctx.drawImage(this.htmlCanvas, 0, 0, this.width, this.height);
-	},
-	
-	getCanvas: function()
-	{
-		return this.htmlCanvas;
-	},
-	
-});
+
 
 
 
@@ -128,13 +86,9 @@ var GeRenderer = Class.create(GeObject, {
 	
 	draw: function() 
 	{
-		color = 'rgba(0,0,0,0,1)'
+		color = 'rgba(0,0,0,1)';
 		this.save();
-		this.clear('rgba(0,0,0,0)');
-		this.layers[0].clear(color);	
-		/*if (this.Mouse) {
-			this.Mouse.draw(ctx);
-		}*/
+		this.clear(color);
 		this.Screen.draw(this);
 		if (this.Camera) {
 			this.Camera.draw(this);
@@ -142,14 +96,12 @@ var GeRenderer = Class.create(GeObject, {
 		this.parent.SG.draw(this);
 		this.swap();
 		this.restore();
-		
 		var ctime = Date.now();
 		var d = ctime - this.lastFrameTime;			
 		if (d >= 1000.0) {
 			this.fps = (this.frameCount + this.fps) / 2.0;
 			this.lastFrameTime = ctime + (d - 1000);
 			this.frameCount = 0;
-			
 		}
 		this.frameCount++;	
 	},
@@ -222,5 +174,4 @@ var GeRenderer = Class.create(GeObject, {
 	{
 		return this.fps;
 	},
-	
 });

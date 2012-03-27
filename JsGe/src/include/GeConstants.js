@@ -1,6 +1,6 @@
 /* Can be tweak */
 const GE_CORE_DISCRETE_TIME = 33;
-const GE_CORE_TIMER_UPDATE = 0.030;
+const GE_CORE_TIMER_UPDATE = 0.015;
 const GE_CORE_TIMER_RENDERING = 0.015;
 
 
