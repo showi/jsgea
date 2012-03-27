@@ -1,0 +1,62 @@
+---------- ----- ----------
+dir: 0
+0-0-layer-0.png
+	filename: 0-0-layer-0.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-layer-0.png","type":"3","filext":"png"}]],"name":"0"}0-0-real.png
+	filename: 0-0-real.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-real.png","type":"3","filext":"png"}]],"name":"0"}0-0-shadow.png
+	filename: 0-0-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"}]],"name":"0"}0-1-shadow.png
+	filename: 0-1-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}]],"name":"0"}1-0-shadow.png
+	filename: 1-0-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}],[{"filename":"1-0-shadow.png","type":"3","filext":"png"}]],"name":"0"}1-1-shadow.png
+	filename: 1-1-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}],[{"filename":"1-0-shadow.png","type":"3","filext":"png"},{"filename":"1-1-shadow.png","type":"3","filext":"png"}]],"name":"0"}2-0-shadow.png
+	filename: 2-0-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}],[{"filename":"1-0-shadow.png","type":"3","filext":"png"},{"filename":"1-1-shadow.png","type":"3","filext":"png"}],[{"filename":"2-0-shadow.png","type":"3","filext":"png"}]],"name":"0"}---------- ----- ----------
+dir: darks
+0-0-layer-0.png
+	filename: 0-0-layer-0.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-layer-0.png","type":"3","filext":"png"}]],"name":"darks"}0-0-real.png
+	filename: 0-0-real.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-real.png","type":"3","filext":"png"}]],"name":"darks"}0-0-shadow.png
+	filename: 0-0-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"}]],"name":"darks"}0-0.xcf
+0-1-shadow.png
+	filename: 0-1-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}]],"name":"darks"}1-0-shadow.png
+	filename: 1-0-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}],[{"filename":"1-0-shadow.png","type":"3","filext":"png"}]],"name":"darks"}1-1-shadow.png
+	filename: 1-1-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}],[{"filename":"1-0-shadow.png","type":"3","filext":"png"},{"filename":"1-1-shadow.png","type":"3","filext":"png"}]],"name":"darks"}2-0-shadow.png
+	filename: 2-0-shadow.png
+	type: 3
+	filext: png
+{"cells":[[{"filename":"0-0-shadow.png","type":"3","filext":"png"},{"filename":"0-1-shadow.png","type":"3","filext":"png"}],[{"filename":"1-0-shadow.png","type":"3","filext":"png"},{"filename":"1-1-shadow.png","type":"3","filext":"png"}],[{"filename":"2-0-shadow.png","type":"3","filext":"png"}]],"name":"darks"}

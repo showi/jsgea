@@ -1,0 +1,124 @@
+<html>
+<head>
+<link rel="icon" type="image/png" href="jsge.png" />
+<base href="../JsGe/src/" />
+
+<script src="../lib/prototype-1.7.js"></script>
+
+<!-- Game Engine Component -->
+<script src="lib/GeArray2D.js"></script>
+<script src="lib/GeLinkedList.js"></script>
+<script src="lib/GeVector2D.js"></script>
+<script src="lib/GeVector3D.js"></script>
+<!--<script src="lib/GeColor.js"></script>-->
+
+<script src="include/GeConstants.js"></script>
+
+
+<script src="include/GeGlobals.js"></script>
+<!--<script src="../JsGe/src/GeVar.js"></script>-->
+<script src="GeGenID.js"></script>
+<script src="GeObject.js"></script>
+<script src="GeLog.js"></script>
+
+<!--<script src="GePosition.js"></script>-->
+
+
+
+<script src="GeDiscreteTime.js"></script>
+
+
+<script src="io/GeMouse.js"></script>
+<script src="io/GeKeyboard.js"></script>
+
+<script src="GeImage.js"></script>
+<script src="GeMediaPool.js"></script>
+<script src="GeWaitLoading.js"></script>
+
+<script src="tree/GeNode.js"></script>
+<script src="tree/GeEntityAnimation.js"></script>
+<script src="tree/GeEntity.js"></script>
+<script src="tree/GeTile.js"></script>
+
+<script src="tree/GeSubMapWalker.js"></script>
+<script src="tree/GeSubMap.js"></script>
+<script src="GeScreen.js"></script>
+
+<script src="GePhysic.js"></script>
+
+
+<script src="GeCamera.js"></script>
+<script src="GeRenderer.js"></script>
+<script src="GeResource.js"></script>
+<script src="GeCore.js"></script>
+
+
+<script src="GePathFindingA.js"></script>
+
+<script src="GeTileSet.js"></script>
+
+
+<script src="../../JsGe-2DMap/src/GeEntity_Creature.js"></script>-->
+<script src="../../JsGe-2DMap/src/MtCore.js"></script>
+<script src="../../JsGe-2DMap/src/GeNodeScrollMap.js"></script>
+<script src="../../JsGe-2DMap/src/MtInitGlobals.js"></script>
+
+
+<!-- END -->
+
+<style>
+body {
+	margin: 0;
+	padding 0;
+}
+.bold {
+	weight: bold;
+	font-size: large;
+}
+</style>
+</head>
+<body id="GameHtmlBody" onLoad="ShoGE.Core.init(1024, 768);" style="background-color: black; color:white;">  
+	<div style="align: center;">
+		
+	</div>
+	<div style="clear:both; align: center; cursor: none;">
+		<canvas style="position: relative;border-width:1; border-color: white; cursor:none;" id="GameScreen"  width="1024" height="768" ></canvas>
+	</div>
+	<div style="">
+		<div>
+			Player Pos:<span id="PlayerPosX">0</span>,&nbsp;<span id="PlayerPosY">0</span>
+		</div>	
+		<div>
+		<div>
+			FPS:&nbsp;<span id="GameFPS">0</span>
+		</div>
+		<div>
+			Elapsed Time:&nbsp;<span id="GameElapsedTime">0</span>
+		</div>
+				<div>
+			Alpha:&nbsp;<span id="GameAlpha">0</span>
+		</div>
+		<div>
+			Mouse(<span id="clickatX">0</span>,&nbsp;<span id="clickatY">0</span>)
+		</div>
+		<div>
+			Click up(<span id="clickUpX">0</span>,&nbsp;<span id="clickUpY">0</span>)
+		</div>
+		<div>
+			Click down(<span id="clickDownX">0</span>,&nbsp;<span id="clickDownY">0</span>)
+		</div>
+		<div>
+			Mouse status:&nbsp;<span id="MouseStatus">0</span>
+		</div>	
+		<div>
+			Area:&nbsp;<span id="MouseArea">0</span>
+		</div>
+		<div>
+		<span id="GameMsg"></span>
+		</div>
+		<div>
+		<span id="GameDebug"></span>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+var ShoGE = new Object();

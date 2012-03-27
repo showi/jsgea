@@ -1,0 +1,20 @@
+{
+"name": "GeJS",
+"description": "Game Engine Javascript (just a bunch of balls bouncing around :p)",
+"version": "0.0.1",
+"icons": {
+"128": "jsge.png"
+},
+"app": {
+"urls": [
+"http://showi.github.com/JsGe/"
+],
+"launch": {
+"web_url": "http://showi.github.com/JsGe/"
+}
+},
+"permissions": [
+"unlimitedStorage",
+"notifications"
+]
+}

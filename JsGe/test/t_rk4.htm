@@ -1,0 +1,34 @@
+<html>
+<head>
+
+<script src="lib/prototype-1.7.js"></script>
+
+<!-- Game Engine Component -->
+
+<!-- Base Lib -->
+<script src="src/GeGlobals.js"></script>
+<script src="src/GeGenID.js"></script>
+<script src="src/GeObject.js"></script>
+<!-- END -->
+
+<script src="src/GeLog.js"></script>
+<script src="src/GeVector2d.js"></script>
+<script src="src/GeRK4Integrator.js"></script>
+<script src="src/GeTest.js"></script>
+<script src="src/t_RK4.js"></script>
+<!-- END -->
+
+<style>
+.bold {
+	weight: bold;
+	font-size: large;
+}
+</style>
+</head>
+<body onLoad="start();" style="background-color: grey;">  
+	<div style="background-color: black; color: white;">
+		<div>Log:</div><div id="GameLog" style="height: 400; overflow: scroll;"></div>
+	</div>
+	<div id="GameRand">random</div>
+</body>
+</html>

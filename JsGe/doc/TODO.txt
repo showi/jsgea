@@ -1,0 +1,14 @@
+TODO
+
+Tester les capacites du navigateur: html 5 canvas, storage ...
+
+Map chargeant les submap
+
+Revision de GeScreen
+
+Ajout d'une classe GeBuffer
+
+Utilisation de GeBuffer par le renderer pour supporter la "composition"
+
+Gestion reel des layers au niveau de la submap
+
